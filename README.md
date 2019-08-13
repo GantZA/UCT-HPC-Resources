@@ -1,4 +1,4 @@
-# UCT Unofficial High Performance Computing Resources
+# Unofficial UCT High Performance Computing Resources
 Example scripts and resources for using UCT's High Performance Cluster
 
 ## Windows Example Usage
