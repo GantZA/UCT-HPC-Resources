@@ -26,7 +26,7 @@ Create a `.sh` file with SBATCH directives which will contain all the settings a
 to run. For example:
 ```
 #!/bin/sh
-#SBATCH --account stats
+#SBATCH --account=stats
 #SBATCH --partition=ada
 #SBATCH --time=24:00:00
 #SBATCH --nodes=1
@@ -37,7 +37,7 @@ to run. For example:
 #SBATCH --cpus-per-task=40
 
 module load compilers/julia-1.1.1
-julia -p40 ./hpc-run.jl > out.txt
+julia -p40 ./hpc_run.jl > out.txt
 
 ```
 The first line is the __shebang__ which tells the computer that this is a bash script.
