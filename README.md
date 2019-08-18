@@ -26,23 +26,23 @@ Create a `.sh` file with SBATCH directives which will contain all the settings a
 to run. For example:
 ```
 #!/bin/sh
-#SBATCH --account=stats
-#SBATCH --partition=curie
+#SBATCH --account stats
+#SBATCH --partition=ada
 #SBATCH --time=24:00:00
 #SBATCH --nodes=1
 #SBATCH --job-name="surface_plot_alpha_nu"
 #SBATCH --mail-user=gntmic002@myuct.ac.za
 #SBATCH --mail-type=ALL
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=64
+#SBATCH --cpus-per-task=40
 
 module load compilers/julia-1.1.1
-julia -p64 ./hpc-run.jl > out.txt
+julia -p40 ./hpc-run.jl > out.txt
 
 ```
 The first line is the __shebang__ which tells the computer that this is a bash script.
 The SBATCH lines are arguments for the HPC's job scheduler. We are using the Statistics
-account, the _curie_ partition (64 cores per node) for 24 hours, only 1 node, my UCT email will be emailed for status updates, we are running only 1 task and reserving 64 cores for this task.
+account, the _ada_ partition (40 cores per node) for 24 hours, only 1 node, my UCT email will be emailed for status updates, we are running only 1 task and reserving 40 cores for this task.
 
 The lines after the #SBATCH lines are the actual bash commands that are run. The first line
 gets the worker node to load Julia and then the second line opens 64 Julia processes and
