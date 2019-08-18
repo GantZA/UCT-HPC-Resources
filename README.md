@@ -45,7 +45,7 @@ The SBATCH lines are arguments for the HPC's job scheduler. We are using the Sta
 account, the _ada_ partition (40 cores per node) for 24 hours, only 1 node, my UCT email will be emailed for status updates, we are running only 1 task and reserving 40 cores for this task.
 
 The lines after the #SBATCH lines are the actual bash commands that are run. The first line
-gets the worker node to load Julia and then the second line opens 64 Julia processes and
+gets the worker node to load Julia and then the second line opens 40 Julia processes and
 executes the `hpc-run.jl` file. Any output that would be printed to the command line is
 instead saved to `out.txt`
 
