@@ -1,13 +1,23 @@
 # Unofficial UCT High Performance Computing Resources
 Example scripts and resources for using UCT's High Performance Cluster
 
-## Windows Example Usage
+## Windows Login
 
-### SSH in using putty
+### SSH using putty
 
 * open putty and enter `hpc.uct.ac.za`
 * login with username and password
 * YOU ARE NOW ON THE MASTER NODE! CAREFUL!
+
+## Linux Login
+
+### SSH using terminal
+
+* open terminal and enter `ssh studentno@hpc.uct.ac.za`
+* login with username and password
+* YOU ARE NOW ON THE MASTER NODE! CAREFUL!
+
+## Example Usage
 
 ### Load R/Julia packages
 
