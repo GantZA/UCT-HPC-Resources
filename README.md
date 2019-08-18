@@ -49,4 +49,7 @@ gets the worker node to load Julia and then the second line opens 40 Julia proce
 executes the `hpc-run.jl` file. Any output that would be printed to the command line is
 instead saved to `out.txt`
 
-We save this `.sh` file in our working directory somewhere. E.g.
+We save this `.sh` file in our working directory somewhere. E.g. I saved the `.sh` file as `test-surface.sh` in my `/home/gntmic002/masters_dissertation/test_scripts` folder. The Julia script file I want to run, `run_hpc.jl` will also be in this folder.
+
+Now to get the HPC to run our job, we run `sbatch test-surface.sh` in the `test_scripts` folder. You should then see a message saying `Submitted batch job xxxxxx`. To monitor this job, run `squeue -u gntmic002`, just replace gntmic002 with your student number. This should list all the running jobs that you have submitted and which node they are running on. You can then go to http://hpc.uct.ac.za/db/ and visually monitor how your assigned node is doing.
+
