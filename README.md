@@ -22,10 +22,11 @@ Example scripts and resources for using UCT's High Performance Cluster
 ### Load R/Julia packages
 
 * Open an interactive session on a worker node by running `srun --pty --account=stats --time=60:00  bash -l` (tip: right click to paste in PuTTY)
-* Load R/Julia by running `module load software/R-3.x.x` or `module load compilers/julia-1.1.1`
+* Load R/Julia by running `module load software/R-3.x.x` or `module load compilers/julia-1.1.1`, use 'module avail' to choose a module.
 * Open R/Julia Terminal by running `R` or `Julia`
 * Install R packages using `install.packages()` function
 * Install Julia packages by using `] add `
+* Use 'quit()' to exit the console
 
 Once the packages have been installed, press `CTRL D` to terminate the interactive bash session
 on the worker node.
