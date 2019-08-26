@@ -30,7 +30,7 @@ Example scripts and resources for using UCT's High Performance Cluster
 Once the packages have been installed, press `CTRL D` to terminate the interactive bash session
 on the worker node.
 
-To reserve more than one worker node, in the first step use srun --pty --account=stats --time=08:00:00 --cpus-per-task=40 bash -l
+To reserve more than one worker node, in the first step use 'srun --pty --account=stats --time=08:00:00 --cpus-per-task=40 bash -l'
 
 ### Prepare Job Script
 
